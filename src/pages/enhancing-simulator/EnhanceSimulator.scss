@@ -1,0 +1,341 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 72rpx;
+  padding: 16rpx;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 72rpx;
+}
+
+.info-card {
+  background-color: #333;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.label {
+  margin-bottom: 8rpx;
+  color: #aaa;
+}
+
+.value {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.selection-card {
+  background-color: #333;
+  padding: 24rpx;
+  border-radius: 16rpx;
+}
+
+.instruction {
+  margin-bottom: 24rpx;
+  color: #aaa;
+}
+
+.item-selection {
+  display: flex;
+  gap: 32rpx;
+}
+
+.item-icon {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #444;
+  border-radius: 16rpx;
+  border: 2rpx solid #ff9900; /* 假设 rarity-5 对应的颜色 */
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.enhance-level {
+  position: absolute;
+  bottom: 8rpx;
+  right: 12rpx;
+  font-size: 16rpx;
+  color: #fff;
+}
+
+.dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border: 1rpx solid #999;
+  background-color: #444;
+  padding: 0 24rpx;
+  border-radius: 16rpx;
+}
+
+.dropdown-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.enhance-level-selection {
+  width: 112rpx;
+}
+
+.enhance-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 224rpx;
+  border-radius: 16rpx;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.diagram {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.diagram-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.diagram-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-overlay {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item-count {
+  font-size: 20rpx;
+  color: #fff;
+}
+
+.save-button {
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #00ff00;
+  background-color: rgba(0, 255, 0, 0.8);
+  border-radius: 50%;
+}
+
+.save-action {
+  width: 100%;
+  height: 48rpx;
+  border: 2rpx solid #00ff00;
+  background-color: rgba(0, 255, 0, 0.8);
+  border-radius: 16rpx;
+  transition: brightness 0.3s;
+}
+
+.additional-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.control-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+}
+
+.control-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.enhance-input {
+  width: 192rpx;
+  height: 56rpx;
+  border: 1rpx solid #999;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 0 16rpx;
+  text-align: right;
+  color: #fff;
+  border-radius: 8rpx;
+}
+
+.enhance-input:focus {
+  border-color: #ff9900;
+}
+
+.layer-btn {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 8rpx;
+  background-color: rgba(0, 255, 0, 0.8);
+  border: 2rpx solid #00ff00;
+  transition: brightness 0.3s;
+}
+
+.layer-btn:hover {
+  brightness: 1.25;
+}
+
+.current-enhance-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 56rpx;
+  font-size: 32rpx;
+}
+
+.enhance-success {
+  color: #fff;
+}
+
+.calculator-card {
+  background-color: #333;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.calculator-title {
+  margin-bottom: 48rpx;
+  font-size: 24rpx;
+}
+
+.success-probability {
+  color: #fff;
+}
+
+.acquired-items {
+  display: none; /* 保留移动端隐藏 */
+}
+
+.items-container {
+  background-color: #333;
+  border: 2rpx solid #999;
+  border-radius: 16rpx;
+  padding: 16rpx;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32rpx;
+  position: relative;
+  z-index: 10;
+}
+
+.item {
+  width: 100%;
+  height: 160rpx;
+  border-radius: 16rpx;
+  background-color: rgba(85, 85, 85, 0.5);
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.enhance-level {
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.delete-button {
+  width: 320rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  background-color: rgba(255, 0, 0, 0.8);
+  border: 2rpx solid #ff0000;
+  transition: brightness 0.3s;
+}
+
+.delete-button:hover {
+  brightness: 1.25;
+}
+
+.result-statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 72rpx;
+  grid-column: span 2;
+}
+
+.statistics-card {
+  background-color: #333;
+  padding: 24rpx;
+  border-radius: 16rpx;
+}
+
+.statistics-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32rpx;
+  border-bottom: 1rpx solid #999;
+  padding-bottom: 12rpx;
+}
+
+.stat-label {
+  text-align: right;
+  color: #ff0000;
+}
+
+.stat-value {
+  color: #ff0000;
+}
+
+.result-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48rpx;
+}
+
+.summary-card {
+  background-color: #333;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.summary-value {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.summary-label {
+  color: #aaa;
+}
+
+.enhance-success {
+  color: #00ff00;
+}
+
+.enhance-failure {
+  color: #ff0000;
+}

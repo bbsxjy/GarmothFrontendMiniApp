@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "heishabox",
+  "appid": "wx05bbf03967e2cffc",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
